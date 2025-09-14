@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shorts - SportsWear Pro</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1><i class="fas fa-bolt"></i> SportsWear Pro</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="tshirts.html" class="nav-link">T-Shirts</a></li>
+                <li><a href="shorts.html" class="nav-link active">Shorts</a></li>
+                <li><a href="shoes.html" class="nav-link">Shoes</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+              
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Shorts</h1>
+            <p class="page-subtitle">Comfortable and durable shorts for every activity</p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-header">
+                <div class="filter-tabs">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="basketball">Basketball</button>
+                    <button class="filter-btn" data-filter="training">Training</button>
+                    <button class="filter-btn" data-filter="running">Running</button>
+                </div>
+                <div class="sort-options">
+                    <select id="sortSelect">
+                        <option value="default">Sort by</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="name">Name A-Z</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="products-grid">
+                <!-- Shorts 1 -->
+                <div class="product-card" data-category="basketball">
+                    <div class="product-image">
+                        <img src="short_1.jpg" alt="Basketball Shorts">
+                        <div class="product-overlay">
+                            <button class="btn-quick-view" onclick="showProductDetails('shorts-1')">Quick View</button>
+                            <button class="btn-wishlist"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="product-badge">Best Seller</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Basketball Shorts</h3>
+                        <p class="product-category">Basketball Wear</p>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>(42)</span>
+                        </div>
+                        <p class="price">$39.99</p>
+                        <button class="btn-add-cart" onclick="addToCart('shorts-1')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Shorts 2 -->
+                <div class="product-card" data-category="training">
+                    <div class="product-image">
+                        <img src="short_2.jpg" alt="Training Shorts">
+                        <div class="product-overlay">
+                            <button class="btn-quick-view" onclick="showProductDetails('shorts-2')">Quick View</button>
+                            <button class="btn-wishlist"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Training Shorts</h3>
+                        <p class="product-category">Training Wear</p>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span>(28)</span>
+                        </div>
+                        <p class="price">$32.99</p>
+                        <button class="btn-add-cart" onclick="addToCart('shorts-2')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Shorts 3 -->
+                <div class="product-card" data-category="running">
+                    <div class="product-image">
+                        <img src="short_3.jpg" alt="Running Shorts">
+                        <div class="product-overlay">
+                            <button class="btn-quick-view" onclick="showProductDetails('shorts-3')">Quick View</button>
+                            <button class="btn-wishlist"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="product-badge new">New</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Running Shorts</h3>
+                        <p class="product-category">Running Wear</p>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>(35)</span>
+                        </div>
+                        <p class="price">$36.99</p>
+                        <button class="btn-add-cart" onclick="addToCart('shorts-3')">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Shorts 4 - Duplicate for grid layout -->
+                <div class="product-card" data-category="basketball">
+                    <div class="product-image">
+                        <img src="short_1.jpg" alt="Basketball Shorts Pro">
+                        <div class="product-overlay">
+                            <button class="btn-quick-view" onclick="showProductDetails('shorts-4')">Quick View</button>
+                            <button class="btn-wishlist"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="product-badge sale">Sale</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Basketball Shorts Pro</h3>
+                        <p class="product-category">Basketball Wear</p>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span>(19)</span>
+                        </div>
+                        <p class="price">$34.99 <span class="old-price">$44.99</span></p>
+                        <button class="btn-add-cart" onclick="addToCart('shorts-4')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more">
+                <button class="btn-secondary">Load More Products</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Modal -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <!-- Cart Popup -->
+    <div id="cartPopup" class="cart-popup">
+        <div class="cart-overlay" onclick="closeCartPopup()"></div>
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3><i class="fas fa-shopping-cart"></i> Shopping Cart</h3>
+                <button class="close-cart" onclick="closeCartPopup()">&times;</button>
+            </div>
+            <div class="cart-body">
+                <div id="cartItems" class="cart-items">
+                    <!-- Cart items will be populated here -->
+                </div>
+                <div class="cart-empty" id="cartEmpty">
+                    <i class="fas fa-shopping-cart"></i>
+                    <p>Your cart is empty</p>
+                    <button class="btn-primary" onclick="closeCartPopup()">Continue Shopping</button>
+                </div>
+            </div>
+            <div class="cart-footer" id="cartFooter" style="display: none;">
+                <div class="cart-summary">
+                    <div class="cart-total">
+                        <span>Total: $<span id="cartTotal">0.00</span></span>
+                    </div>
+                    <div class="cart-actions">
+                        <button class="btn-secondary" onclick="closeCartPopup()">Continue Shopping</button>
+                        <button class="btn-primary" onclick="proceedToCheckout()">Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Payment Modal -->
+    <div id="paymentModal" class="modal">
+        <div class="modal-content payment-modal">
+            <span class="close" onclick="closePaymentModal()">&times;</span>
+            <div class="payment-header">
+                <h2><i class="fas fa-credit-card"></i> Payment Details</h2>
+                <p>Complete your purchase securely</p>
+            </div>
+            <div class="payment-content">
+                <div class="order-summary">
+                    <h3>Order Summary</h3>
+                    <div id="orderItems"></div>
+                    <div class="order-total">
+                        <strong>Total: $<span id="orderTotal">0.00</span></strong>
+                    </div>
+                </div>
+                <form id="paymentForm" class="payment-form">
+                    <div class="form-group">
+                        <label for="cardNumber">Card Number</label>
+                        <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" maxlength="19" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="expiryDate">Expiry Date</label>
+                            <input type="text" id="expiryDate" placeholder="MM/YY" maxlength="5" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cvv">CVV</label>
+                            <input type="text" id="cvv" placeholder="123" maxlength="4" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="cardName">Cardholder Name</label>
+                        <input type="text" id="cardName" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Billing Address</label>
+                        <textarea id="address" placeholder="123 Main St, City, State, ZIP" required></textarea>
+                    </div>
+                    <div class="payment-actions">
+                        <button type="button" class="btn-secondary" onclick="closePaymentModal()">Cancel</button>
+                        <button type="submit" class="btn-primary">
+                            <i class="fas fa-lock"></i> Pay $<span id="paymentTotal">0.00</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Icon -->
+    <div class="cart-icon" onclick="openCartPopup()">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count" id="cartCount">0</span>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3><i class="fas fa-bolt"></i> SportsWear Pro</h3>
+                    <p>Your premium destination for athletic wear and fitness gear.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Products</h4>
+                        <ul>
+                            <li><a href="tshirts.html">T-Shirts</a></li>
+                            <li><a href="shorts.html">Shorts</a></li>
+                            <li><a href="shoes.html">Shoes</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="index.html#contact">Contact</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Shipping</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SportsWear Pro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

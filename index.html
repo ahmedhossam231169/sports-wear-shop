@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportsWear Pro - Premium Athletic Wear</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1><i class="fas fa-bolt"></i> SportsWear Pro</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="tshirts.html" class="nav-link">T-Shirts</a></li>
+                <li><a href="shorts.html" class="nav-link">Shorts</a></li>
+                <li><a href="shoes.html" class="nav-link">Shoes</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+              
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Push Your Limits with Us</h1>
+                <p class="hero-description">From beginner to advanced, experience workouts designed to help you achieve peak performance and exceed your fitness goals.</p>
+                <div class="hero-actions">
+                    <button class="btn-primary btn-large">Join Now <i class="fas fa-arrow-right"></i></button>
+                    <button class="btn-video">
+                        <i class="fas fa-play"></i>
+                        Watch Video
+                    </button>
+                </div>
+                <div class="hero-social">
+                    <div class="user-avatars">
+                        <div class="avatar"></div>
+                        <div class="avatar"></div>
+                        <div class="avatar"></div>
+                        <div class="avatar-plus">+</div>
+                    </div>
+                    <div class="rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span>1.7k reviews</span>
+                    </div>
+                </div>
+                <div class="service-tags">
+                    <span class="tag">Personal Training</span>
+                    <span class="tag">Strength</span>
+                    <span class="tag">Group Classes</span>
+                    <span class="tag">Swimming</span>
+                    <span class="tag">Cardio Equipment</span>
+                    <span class="tag">Functional Workouts</span>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="photo-1571019613454-1cb2f99b2d8b.avif" alt="Athlete running">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <span class="section-label">About Us</span>
+                    <h2 class="section-title">YOUR <span class="highlight">FITNESS</span> JOURNEY STARTS HERE</h2>
+                    <p class="about-description">At SportsWear Pro, we are dedicated to helping you unlock your full fitness potential. With top-tier equipment, expert trainers, and a welcoming community, we provide the perfect environment to push your limits and achieve your goals.</p>
+                </div>
+                <div class="stats">
+                    <div class="stat-item">
+                        <h3>12+</h3>
+                        <p>Years of Excellence</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>27K+</h3>
+                        <p>Members</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>60+</h3>
+                        <p>Weekly Classes</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>117+</h3>
+                        <p>Expert Trainers</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-video">
+                <div class="video-thumbnail">
+
+                    <video src="1471066_People_Boxing_1280x720.mp4" 
+                           poster="/photos/6038320_Woman_Person_3840x2160.jpg" 
+                           muted 
+                           loop 
+                           preload="metadata"
+                           playsinline>
+                    </video>
+                    <div class="play-button">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="container">
+            <h2 class="section-title">Featured Products</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="shirt_1.jpg" alt="Sport T-Shirt">
+                        <div class="product-overlay">
+                            <button class="btn-quick-view" onclick="showProductDetails('tshirt-1')">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Sport T-Shirt</h3>
+                        <p class="price">$29.99</p>
+                        <button class="btn-add-cart" onclick="addToCart('tshirt-1')">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="short_1.jpg" alt="Basketball Shorts">
+                        <div class="product-overlay">
+                            <button class="btn-quick-view" onclick="showProductDetails('shorts-1')">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Basketball Shorts</h3>
+                        <p class="price">$39.99</p>
+                        <button class="btn-add-cart" onclick="addToCart('shorts-1')">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="shoes_1.jpg" alt="Nike Shoes">
+                        <div class="product-overlay">
+                            <button class="btn-quick-view" onclick="showProductDetails('shoes-1')">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Nike Athletic Shoes</h3>
+                        <p class="price">$89.99</p>
+                        <button class="btn-add-cart" onclick="addToCart('shoes-1')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all">
+                <a href="tshirts.html" class="btn-secondary">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@sportswearpro.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>(555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>123 Sports Street, Athletic City, AC 12345</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3><i class="fas fa-bolt"></i> SportsWear Pro</h3>
+                    <p>Your premium destination for athletic wear and fitness gear.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Products</h4>
+                        <ul>
+                            <li><a href="tshirts.html">T-Shirts</a></li>
+                            <li><a href="shorts.html">Shorts</a></li>
+                            <li><a href="shoes.html">Shoes</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Shipping</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SportsWear Pro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Product Modal -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <!-- Cart Popup -->
+    <div id="cartPopup" class="cart-popup">
+        <div class="cart-overlay" onclick="closeCartPopup()"></div>
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3><i class="fas fa-shopping-cart"></i> Shopping Cart</h3>
+                <button class="close-cart" onclick="closeCartPopup()">&times;</button>
+            </div>
+            <div class="cart-body">
+                <div id="cartItems" class="cart-items">
+                    <!-- Cart items will be populated here -->
+                </div>
+                <div class="cart-empty" id="cartEmpty">
+                    <i class="fas fa-shopping-cart"></i>
+                    <p>Your cart is empty</p>
+                    <button class="btn-primary" onclick="closeCartPopup()">Continue Shopping</button>
+                </div>
+            </div>
+            <div class="cart-footer" id="cartFooter" style="display: none;">
+                <div class="cart-summary">
+                    <div class="cart-total">
+                        <span>Total: $<span id="cartTotal">0.00</span></span>
+                    </div>
+                    <div class="cart-actions">
+                        <button class="btn-secondary" onclick="closeCartPopup()">Continue Shopping</button>
+                        <button class="btn-primary" onclick="proceedToCheckout()">Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Payment Modal -->
+    <div id="paymentModal" class="modal">
+        <div class="modal-content payment-modal">
+            <span class="close" onclick="closePaymentModal()">&times;</span>
+            <div class="payment-header">
+                <h2><i class="fas fa-credit-card"></i> Payment Details</h2>
+                <p>Complete your purchase securely</p>
+            </div>
+            <div class="payment-content">
+                <div class="order-summary">
+                    <h3>Order Summary</h3>
+                    <div id="orderItems"></div>
+                    <div class="order-total">
+                        <strong>Total: $<span id="orderTotal">0.00</span></strong>
+                    </div>
+                </div>
+                <form id="paymentForm" class="payment-form">
+                    <div class="form-group">
+                        <label for="cardNumber">Card Number</label>
+                        <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" maxlength="19" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="expiryDate">Expiry Date</label>
+                            <input type="text" id="expiryDate" placeholder="MM/YY" maxlength="5" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cvv">CVV</label>
+                            <input type="text" id="cvv" placeholder="123" maxlength="4" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="cardName">Cardholder Name</label>
+                        <input type="text" id="cardName" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Billing Address</label>
+                        <textarea id="address" placeholder="123 Main St, City, State, ZIP" required></textarea>
+                    </div>
+                    <div class="payment-actions">
+                        <button type="button" class="btn-secondary" onclick="closePaymentModal()">Cancel</button>
+                        <button type="submit" class="btn-primary">
+                            <i class="fas fa-lock"></i> Pay $<span id="paymentTotal">0.00</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Icon -->
+    <div class="cart-icon" onclick="openCartPopup()">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count" id="cartCount">0</span>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
